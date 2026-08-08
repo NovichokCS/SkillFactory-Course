@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1256px;
+}
+
+.header {
+  background-color: #000000;
+  font-size: 11px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  height: 83px;
+  align-items: center;
+}
+
+.header__logo {
+  color: #E3B873;
+}
+
+.button {
+  font-size: 11px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-style: italic;
+  border-radius: 2px;
+}
+
+.header__button {
+  border: 0;
+  background: #E3B873;
+  box-shadow: 0px 5px 15px 0px #E3B87333;
+  padding: 13px 33px;
+}
+
+.header__list {
+  display: flex;
+  list-style: none;
+}
+
+.header__item {
+  margin-right: 47px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.header__phone {
+  color: #E3B873;
+  text-decoration: solid underline;
+  margin: 0 45px;
+}
+
+.main__welcome {
+  background-image: url(/images/background_kitchen.png);
+  background-size: cover;
+  height: 707px;
+  padding-top: 194px;
+  position: relative;
+}
+
+.image-filter {
+  width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0.7;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  width: 677px;
+  margin-left: 134px;
+}
+
+.title {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Yeseva One', 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.title__city {
+  color: #E3B873;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-top: 19px;
+  margin-bottom: 41px;
+}
+
+.main__button {
+  margin-right: 20px;
+  width: 207px;
+  height: 51px;
+}
+
+.orange__button {
+  box-shadow: 0px 5px 15px 0px #E3B8734D;
+  background-color: #E3B873;
+  border: 0;
+}
+
+.whole__button {
+  border: solid 1px #FFFFFF;
+  background: none;
+
+}
+
+.main__completed-projects {
+  background-color: #000000;
+  height: 1074px;
+}
+
+.container.main-completed {
+  margin: 0 auto;
+  width: 1171px;
+}
