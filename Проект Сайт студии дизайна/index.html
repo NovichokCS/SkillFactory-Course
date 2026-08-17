@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Repair-Design-Project</title>
 </head>
@@ -48,9 +51,9 @@
                 <h1 class="title">
                     Turnkey Repair in the <br> city of <span class="title__city">Rostov-on-Don</span>
                 </h1>
-                <h2 class="subtitle">
+                <p class="title__text">
                     Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work
-                </h2>
+                </p>
                 <button class="button main__button orange__button" type="button">Calculate the cost</button>
                 <button class="button main__button whole__button" type="button">Submit your application</button>
             </div>
@@ -60,7 +63,7 @@
             <div class="container main-completed">
                 <ul class="completed_projects-list">
                     <li class="completed_projects-item">
-                        <a href="#" class="completed_projects-link">Rostov-on-Don, Admiral</a>
+                        <a href="#" class="completed_projects-link active">Rostov-on-Don, Admiral</a>
                     </li>
                     <li class="completed_projects-item">
                         <a href="#" class="completed_projects-link">Sochi Thieves</a>
@@ -69,6 +72,159 @@
                         <a href="#" class="completed_projects-link">Rostov-on-Don Patriotic</a>
                     </li>
                 </ul>
+                <div class="main__completed_projects-block">
+                    <div class="main__completed_projects-text">
+                        <h2 class="subtitle">
+                            Completed projects
+                        </h2>
+                        <p class="subtitle__text">
+                            Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families
+                        </p>
+                        <div class="completed_projects-description">
+                            <div class="completed_projects-description-block">
+                                <h3 class="block-subtitle">
+                                    City:
+                                </h3>
+                                <span class="description-text">
+                                    Rostov-on-Don LCD admiral
+                                </span>
+                            </div>
+                            <div class="completed_projects-description-block">
+                                <h3 class="block-subtitle">
+                                    Apartment area:
+                                </h3>
+                                <span class="description-text">
+                                    81 m2
+                                </span>
+                            </div>
+                            <div class="completed_projects-description-block">
+                                <h3 class="block-subtitle">
+                                    Repair time:
+                                </h3>
+                                <span class="description-text">
+                                    3.5 months
+                                </span>
+                            </div>
+                            <div class="completed_projects-description-block">
+                                <h3 class="block-subtitle">
+                                    Repair Cost:
+                                </h3>
+                                <span class="description-text">
+                                    Upon request
+                                </span>
+                            </div>
+                        </div>
+                        <div class="completed_projects-slider">
+                            <span class="slider-arrow">←</span>
+                            <span class="slider-dot active"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-arrow">→</span>
+                        </div>
+                    </div>
+                    <img class="completed_projects-image" src="/images/Rostov-on-Don-desktop.png" alt="Декор">
+                </div>
+            </div>
+        </section>
+        <section class="online-control">
+            <h2 class="online-control__title">
+                Online control
+            </h2>
+            <div class="online-control__decor">
+                <span class="online-control__line"></span>
+                <img class="online-control__icon" src="/images/camera.svg" alt="Камера">
+                <span class="online-control__line"></span>
+            </div>
+            <div class="online-control__video">
+                <img class="online-control__video-image" src="/images/online-control-desktop.png" alt="Процесс ремонта">
+                <div class="online-control__overlay"></div>
+                <button class="online-control__play" type="button" aria-label="Запустить видео">
+                    <span class="online-control__play-icon"></span>
+                </button>
+            </div>
+            <div class="online-control__divider"></div>
+            <p class="online-control__text">
+                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!<br>Leave a request below and you will receive a link to the broadcast.
+            </p>
+            <form class="online-control__form">
+                <div class="online-control__form-row">
+                    <div class="online-control__field">
+                        <label class="online-control__field-label" for="online-name">Name</label>
+                        <input class="online-control__field-input" id="online-name" name="name" type="text" placeholder="What is your name:" required>
+                    </div>
+                    <div class="online-control__field">
+                        <label class="online-control__field-label" for="online-phone">Phone</label>
+                        <input class="online-control__field-input" id="online-phone" name="phone" type="tel" placeholder="Your phone number:" required>
+                    </div>
+                    <button class="button online-control__submit" type="submit">Submit</button>
+                </div>
+                <div class="online-control__checkbox">
+                    <label class="online-control__checkbox-label">
+                        <input class="online-control__checkbox-input" type="checkbox" name="personal-data" required checked>
+                        <span class="online-control__checkbox-fake" aria-hidden="true"></span>
+                        <span class="online-control__checkbox-text">I agree to the processing of personal data</span>
+                    </label>
+                </div>
+            </form>
+        </section>
+        <section class="types-of-repair">
+            <div class="container">
+                <h2 class="types-of-repair__title">Types of Repair</h2>
+                <div class="types-of-repair__decor">
+                    <span class="types-of-repair__line"></span>
+                    <img class="types-of-repair__icon" src="/images/tools.svg" alt="">
+                    <span class="types-of-repair__line"></span>
+                </div>
+                <div class="types-of-repair__cards">
+                    <article class="repair-card">
+                        <img class="repair-card__image" src="/images/Redecorating_card_img.png" alt="Redecorating">
+                        <div class="repair-card__description">
+                            <h3 class="repair-card__title">Redecorating</h3>
+                            <ul class="repair-card__list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <div class="repair-card__price">From 900 rub / m2</div>
+                    </article>
+                    <article class="repair-card">
+                        <img class="repair-card__image" src="/images/Overhaul_card_img.png" alt="Overhaul">
+                        <div class="repair-card__description">
+                            <h3 class="repair-card__title">Overhaul</h3>
+                            <ul class="repair-card__list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <div class="repair-card__price">From 1800 rub / m2</div>
+                    </article>
+                    <article class="repair-card">
+                        <img class="repair-card__image" src="/images/Designer-Repair_card_img.png" alt="Designer Repair">
+                        <div class="repair-card__description">
+                            <h3 class="repair-card__title">Designer Repair</h3>
+                            <ul class="repair-card__list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <div class="repair-card__price">From 4000 rub / m2</div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
