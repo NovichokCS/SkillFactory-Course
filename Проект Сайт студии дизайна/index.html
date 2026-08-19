@@ -15,42 +15,36 @@
 
 <body>
     <header class="header">
-        <div class="container header-content">
-            <div class="header__logo">
-                IC "Repair Design Project"
-            </div>
-            <nav class="header__nav">
+        <div class="container header__content">
+            <a class="header__logo" href="#home">IC "Repair Design Project"</a>
+            <nav class="header__nav" aria-label="Основная навигация">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a class="header__link" href="#">HOME</a>
+                        <a class="header__link" href="#home">Home</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">PROJECTS</a>
+                        <a class="header__link" href="#projects">Projects</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">MEASUREMENT</a>
+                        <a class="header__link" href="#measurement">Measurement</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">TEAM</a>
+                        <a class="header__link" href="#">Team</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">REVIEWS</a>
+                        <a class="header__link" href="#reviews">Reviews</a>
                     </li>
                     <li class="header__item">
-                        <a class="header__link" href="#">CONTACTS</a>
+                        <a class="header__link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
-            <a class="header__phone" href="tel:+7(928) 768-32-39">
-                +7 (928) 768-32-39
-            </a>
-            <button class="button header__button" type="button">
-                Request a call
-            </button>
+            <a class="header__phone" href="tel:+79287683229">+7 (928) 768-32-39</a>
+            <button class="button header__button" type="button">Request a call</button>
         </div>
     </header>
     <main class="main">
-        <section class="main__welcome">
+        <section class="main__welcome" id="home">
             <div class="container main-content">
                 <h1 class="title">
                     Turnkey Repair in the <br> city of <span class="title__city">Rostov-on-Don</span>
@@ -59,12 +53,17 @@
                     Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br>
                     cost of materials due to the organization of work
                 </p>
-                <button class="button main__button orange__button" type="button">Calculate the cost</button>
-                <button class="button main__button whole__button" type="button">Submit your application</button>
+                <button class="button main__button orange__button" type="button">
+                    Calculate the cost
+                </button>
+                <button class="button main__button whole__button" type="button">
+                    <span class="button-text-desktop">Submit your application</span>
+                    <span class="button-text-mobile">Application</span>
+                </button>
             </div>
             <div class="image-filter"></div>
         </section>
-        <section class="main__completed_projects">
+        <section class="main__completed_projects" id="projects">
             <div class="container main-completed">
                 <ul class="completed_projects-list">
                     <li class="completed_projects-item">
@@ -128,7 +127,17 @@
                             <span class="slider-arrow">→</span>
                         </div>
                     </div>
-                    <img class="completed_projects-image" src="/images/Rostov-on-Don-desktop.png" alt="Декор">
+                    <div class="completed_projects-image-wrapper">
+                        <picture class="completed_projects-picture">
+                            <source media="(max-width: 768px)" srcset="/images/Rostov-on-Don-mobile.png">
+                            <img class="completed_projects-image" src="/images/Rostov-on-Don-desktop.png"
+                                alt="Интерьер завершённого проекта">
+                        </picture>
+                        <span class="completed_projects-image-arrow completed_projects-image-arrow--left"
+                            aria-hidden="true">‹</span>
+                        <span class="completed_projects-image-arrow completed_projects-image-arrow--right"
+                            aria-hidden="true">›</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -240,7 +249,7 @@
                 </div>
             </div>
         </section>
-        <section class="measurement">
+        <section class="measurement" id="measurement">
             <div class="container measurement__content">
                 <div class="measurement__steps">
                     <ol class="measurement__list">
@@ -368,8 +377,181 @@
                 </div>
             </div>
         </section>
+        <section class="clients" id="reviews">
+            <div class="container">
+                <h2 class="clients__title">Our Clients</h2>
+                <div class="clients__decor">
+                    <span class="clients__line"></span>
+                    <img class="clients__decor-icon" src="/images/handshake.svg" alt="">
+                    <span class="clients__line"></span>
+                </div>
+                <p class="clients__subtitle">
+                    80% of our customers recommend us to their<br>
+                    friends and family.
+                </p>
+                <div class="clients__cards">
+                    <article class="client-card">
+                        <div class="client-card__person">
+                            <img class="client-card__avatar" src="/images/client-fedosova.png"
+                                alt="Fedosova Maria Konstantinovna">
+                            <h3 class="client-card__name">
+                                Fedosova Maria<br>
+                                Konstantinovna
+                            </h3>
+                        </div>
+                        <p class="client-card__review">
+                            I want to thank the guys for their work. We put your shower part in repair. I am very
+                            grateful that I referred to the repairs as to my own. Great thanks I express the project to
+                            Georgia for its professionalism and approach.<br><br> The repair process was turned out in
+                            terms, faster than anticipated. Team mobile and professional. Works performed qualitatively
+                            without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="client-card__details">
+                            <div class="client-card__detail">
+                                <img class="client-card__detail-icon" src="/images/area.svg" alt="">
+                                <span class="client-card__detail-text">40 m2</span>
+                            </div>
+                            <div class="client-card__detail">
+                                <img class="client-card__detail-icon" src="/images/calendar.svg" alt="">
+                                <span class="client-card__detail-text">48 days</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="client-card">
+                        <div class="client-card__person">
+                            <img class="client-card__avatar" src="/images/client-afanasyev.png"
+                                alt="Afanasyev Sergey Alexandrovich">
+                            <h3 class="client-card__name">
+                                Afanasyev Sergey<br>
+                                Alexandrovich
+                            </h3>
+                        </div>
+                        <p class="client-card__review">
+                            I want to thank the guys for their work. We put your shower part in repair. I am very
+                            grateful that I referred to the repairs as to my own. Great thanks I express the project to
+                            Georgia for its professionalism and approach.<br><br> The repair process was turned out in
+                            terms, faster than anticipated. Team mobile and professional. Works performed qualitatively
+                            without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="client-card__details">
+                            <div class="client-card__detail">
+                                <img class="client-card__detail-icon" src="/images/area.svg" alt="">
+                                <span class="client-card__detail-text">90 m2</span>
+                            </div>
+                            <div class="client-card__detail">
+                                <img class="client-card__detail-icon" src="/images/calendar.svg" alt="">
+                                <span class="client-card__detail-text">128 days</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="client-card">
+                        <div class="client-card__person">
+                            <img class="client-card__avatar" src="/images/client-kiriev.png"
+                                alt="Kiriev Egor Leonidovich">
+                            <h3 class="client-card__name">
+                                Kiriev Egor<br>
+                                Leonidovich
+                            </h3>
+                        </div>
+                        <p class="client-card__review">
+                            I want to thank the guys for their work. We put your shower part in repair. I am very
+                            grateful that I referred to the repairs as to my own. Great thanks I express the project to
+                            Georgia for its professionalism and approach.<br><br> The repair process was turned out in
+                            terms, faster than anticipated. Team mobile and professional. Works performed qualitatively
+                            without comments. Quality satisfied. Prices democratic. I recommend these masters.
+                        </p>
+                        <div class="client-card__details">
+                            <div class="client-card__detail">
+                                <img class="client-card__detail-icon" src="/images/area.svg" alt="">
+                                <span class="client-card__detail-text">56 m2</span>
+                            </div>
+                            <div class="client-card__detail">
+                                <img class="client-card__detail-icon" src="/images/calendar.svg" alt="">
+                                <span class="client-card__detail-text">86 days</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container contacts__content">
+                <form class="questions">
+                    <h2 class="questions__title">Have any questions?</h2>
+                    <div class="questions__row">
+                        <div class="questions__field">
+                            <label class="questions__field-label" for="questions-name">Name</label>
+                            <input class="questions__field-input" id="questions-name" name="name" type="text"
+                                placeholder="What is your name:" required>
+                        </div>
+                        <div class="questions__field">
+                            <label class="questions__field-label" for="questions-phone">Phone</label>
+                            <input class="questions__field-input" id="questions-phone" name="phone" type="tel"
+                                placeholder="Your phone number:" required>
+                        </div>
+                    </div>
+                    <div class="questions__field questions__field--wide">
+                        <label class="questions__field-label" for="questions-text">Question</label>
+                        <input class="questions__field-input" id="questions-text" name="question" type="text"
+                            placeholder="I want to know:" required>
+                    </div>
+                    <label class="questions__checkbox-label">
+                        <input class="questions__checkbox-input" type="checkbox" name="personal-data" required checked>
+                        <span class="questions__checkbox-fake" aria-hidden="true"></span>
+                        <span class="questions__checkbox-text">I agree to the processing of personal data</span>
+                    </label>
+                    <button class="button questions__submit" type="submit">Submit</button>
+                </form>
+                <address class="contacts__address">
+                    Rostov-on-Don, Nansen St., 239 Shopping Center Decorum
+                    <br>
+                    Tel. +7 (928) 768 32 29
+                </address>
+                <div class="contacts__socials">
+                    <a class="contacts__social-link" href="mailto:example@mail.ru"
+                        aria-label="Написать на электронную почту">
+                        <img src="/images/email.svg" alt="">
+                    </a>
+                    <a class="contacts__social-link" href="#" aria-label="Instagram">
+                        <img src="/images/instagram.svg" alt="">
+                    </a>
+                </div>
+                <div class="contacts__map-frame">
+                    <img class="contacts__map" src="/images/map.png" alt="Карта расположения офиса">
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
+        <div class="container footer__content">
+            <a class="footer__logo" href="#home">
+                IC "Repair Design Project"
+            </a>
+            <nav class="footer__nav" aria-label="Навигация в подвале">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link footer__link--active" href="#home">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#projects">Projects</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#measurement">Measurement</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Team</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="footer__phone" href="tel:+79287683229">+7 (928) 768-32-39</a>
+            <button class="button footer__button" type="button">Request a call</button>
+        </div>
     </footer>
 </body>
 
